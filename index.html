@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p{
+			position: relative;
+			font-family: sans-serif;
+			color: #FFF;
+			font-size: 5em;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			background-size: 80%;
+			background-image: linear-gradient(to right, #000, #FFF, #000);
+			background-repeat: no-repeat;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgba(255, 255, 255, 0.01);
+			animation: animate 4s linear infinite;
+		}
+
+		@keyframes animate{
+			0%{
+				background-position: -500%;
+			}50%{
+				background-position: 500%;
+			}100%{
+				background-position: -500%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p>Shinning text example</p>
+</body>
+</html>
